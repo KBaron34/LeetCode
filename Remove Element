@@ -1,12 +1,11 @@
-class Solution:
-    def removeElement(self, nums: List[int], val: int) -> int:
-        k = 0
-        lst = []
-        for i in nums:
-            if i != val:
-                k += 1
-            else:
-                lst.append(i)
-        for i in lst:
-            nums.remove(i)
-        return k
+def removeElement(self, nums: List[int], val: int) -> int:
+    k = 0
+    lst = []
+    for i in nums:
+        if i != val:
+        k += 1
+    else:
+        lst.append(i)
+    for i in lst:
+        nums.remove(i)
+    return k
